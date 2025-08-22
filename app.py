@@ -2817,4 +2817,4 @@ def settings_page():
     return render_template('settings.html', settings=settings, missing=missing, message=message, message_type=message_type, redirect_main=False, feature_summary=feature_summary)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=2665)
+    app.run(host='0.0.0.0', port=2665)
